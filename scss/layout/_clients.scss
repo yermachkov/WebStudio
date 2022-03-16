@@ -1,25 +1,20 @@
-.clients__title {
-  margin-bottom: 50px;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: $title-text-color;
-}
-
 .clients-list {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  margin: -15px;
 }
 
 .clients-list__item {
-  display: flex;
-  justify-content: center;
-}
+  margin: 15px;
+  width: calc((100% - 30px * 2) / 2);
 
-.clients-list__item + .clients-list__item {
-  margin-left: 30px;
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 30px * 3) / 3);
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 30px * 6) / 6);
+  }
 }
 
 .clients-list__link {
@@ -27,8 +22,8 @@
   justify-content: center;
   align-items: center;
 
-  width: 170px;
-  height: 92px;
+  padding: 16px 52px;
+
   border: 1px solid $icon-color;
   border-radius: 4px;
   color: $icon-color;
@@ -39,6 +34,10 @@
   &:focus {
     color: $primary-accent-color;
     border-color: currentColor;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding: 16px 32px;
   }
 }
 
