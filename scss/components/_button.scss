@@ -1,0 +1,69 @@
+.btn {
+  background-color: $primary-accent-color;
+  color: $secondary-accent-color;
+
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+
+  border-radius: 4px;
+  border: none;
+  letter-spacing: 0.06em;
+  min-width: 200px;
+
+  transition: background-color $transition-duration $transition-type-basic,
+    box-shadow $transition-duration $transition-type-basic;
+
+  &:hover,
+  &:focus {
+    background-color: #188ce8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
+}
+
+.hero__btn {
+  padding: 10px 32px;
+}
+
+.subscribe__btn {
+  display: flex;
+  margin-left: 12px;
+  height: 50px;
+  padding: 10px 28px;
+}
+
+.btn__icon {
+  fill: #ffffff;
+  margin-left: 10px;
+}
+
+.btn-filter {
+  border: none;
+  border-radius: 4px;
+
+  padding: 6px 22px;
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+
+  background-color: $secondary-background-color;
+  color: $title-text-color;
+
+  transition: background-color $transition-duration $transition-type-basic,
+    color $transition-duration $transition-type-basic,
+    box-shadow $transition-duration $transition-type-basic;
+
+  &:hover,
+  &:focus {
+    background-color: $primary-accent-color;
+    color: $secondary-accent-color;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+}
+
+.modal__btn {
+  padding: 10px 55px;
+}

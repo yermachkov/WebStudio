@@ -1,0 +1,26 @@
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: $primary-background-color;
+  color: $primary-text-color;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+}
+
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+@media screen and (min-width: 1200px) {
+   padding-top: 94px;
+  padding-bottom: 94px;
+}
+}
+
+.section__title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  color: $title-text-color;
+  margin-bottom: 50px;
+}

@@ -1,0 +1,130 @@
+.footer {
+  background-color: $footer-backgrounf-color;
+}
+
+.footer-container {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  display: flex;
+  align-items: baseline;
+}
+
+.address-list {
+  font-style: normal;
+  line-height: 1.71;
+}
+
+.ddress-list__item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.address-list__link {
+  color: $secondary-accent-color;
+  transition: color $transition-duration $transition-type-basic;
+
+  &:hover,
+  &:focus {
+    color: $primary-accent-color;
+  }
+}
+
+.address__mail,
+.address__tel {
+  color: $contacts-transparent-color;
+  transition: color $transition-duration $transition-type-basic;
+
+  &:hover,
+  &:focus {
+    color: $primary-accent-color;
+  }
+}
+
+.footer-socials {
+  margin-left: 70px;
+}
+
+.footer__title {
+  margin-bottom: 20px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $secondary-accent-color;
+}
+
+.footer-socials__list {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-socials__item {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-socials__item + .footer-socials__item {
+  margin-left: 10px;
+}
+
+.footer-socials__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+
+  background-color: rgba(255, 255, 255, 0.1);
+  color: $secondary-accent-color;
+  transition: background-color $transition-duration $transition-type-basic;
+
+  &:hover,
+  &:focus {
+    background-color: $primary-accent-color;
+  }
+}
+
+.footer-socials__icon {
+  fill: currentColor;
+}
+
+.subscribe {
+  margin-left: auto;
+}
+
+.subscribe-wrap {
+  display: flex;
+}
+
+.subcribe__input {
+  display: inline-block;
+  width: 358px;
+  height: 50px;
+  padding: 15px;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+
+  color: rgba(255, 255, 255, 0.6);
+  background-color: inherit;
+
+  &::placeholder {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1.25;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
+
+    color: rgba(255, 255, 255, 0.6);
+  }
+}
