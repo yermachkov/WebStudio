@@ -1,0 +1,61 @@
+.menu-btn {
+  position: absolute;
+
+  top: 10px;
+  right: 15px;
+
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  z-index: 2;
+
+  &:hover,
+  &:focus {
+    fill: $primary-accent-color;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.menu-btn .icon-close {
+  display: none;
+}
+
+.menu-btn.is-open .icon-close {
+  display: block;
+  fill: currentColor;
+}
+
+.menu-btn.is-open .icon-menu {
+  display: none;
+}
+
+.menu-container {
+  background-color: #fff;
+  z-index: 1;
+
+  @media screen and (max-width: 767px) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    padding: 48px 40px;
+    overflow-y: hidden;
+    transform: translateY(-102%);
+    transition: transform $transition-type-basic;
+  }
+
+  &.is-open {
+    transform: translateY(0);
+  }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-grow: 1;
+  }
+}

@@ -1,12 +1,14 @@
 .header {
-  display: flex;
-  align-items: center;
-  border-bottom: 1px solid #ececec;
-}
+  position: relative;
 
-.header__wrap {
-  display: flex;
-  align-items: center;
+  border-bottom: 1px solid #ececec;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+  }
+  @media screen and (min-width: 1200px) {
+  }
 }
 
 .nav {
@@ -15,23 +17,42 @@
 }
 
 .nav-list {
-  display: flex;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 302px;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
 }
 
 .nav-list__item:not(:last-child) {
-  margin-right: 50px;
+  @media screen and (min-width: 768px) {
+    margin-right: 50px;
+  }
 }
 
 .nav-list__link {
   display: block;
   position: relative;
 
-  color: $title-text-color;
   font-weight: 500;
-  line-height: 1.15;
+  font-size: 40px;
+  line-height: 1.18;
   letter-spacing: 0.02em;
-  padding-top: 32px;
-  padding-bottom: 32px;
+
+  padding-top: 16px;
+  padding-bottom: 16px;
+
+  color: $title-text-color;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    font-size: 14px;
+    line-height: 1.15;
+    letter-spacing: 0.02em;
+  }
 
   transition: color $transition-duration $transition-type-basic;
 
@@ -44,50 +65,139 @@
 .nav-list__link--current {
   color: $primary-accent-color;
 
-  &::after {
-    content: "";
+  @media screen and (min-width: 768px) {
+    &::after {
+      content: "";
 
-    position: absolute;
-    left: 0;
-    bottom: -1px;
+      position: absolute;
+      left: 0;
+      bottom: -2px;
 
-    height: 4px;
-    width: 100%;
-    border-radius: 2px;
-    background-color: $primary-accent-color;
+      height: 4px;
+      width: 100%;
+      border-radius: 2px;
+      background-color: $primary-accent-color;
+    }
   }
 }
 
 .contacts-list {
-  display: flex;
-  margin-left: auto;
+  @media screen and (max-width: 767px) {
+    margin-top: auto;
+    display: flex;
+    flex-direction: column-reverse;
+    margin-bottom: 64px;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-left: auto;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
 }
 
 .contacts-list__item {
-  & + & {
-    margin-left: 50px;
+  &:nth-child(n + 1) {
+    @media screen and (min-width: 1200px) {
+      margin-left: 50px;
+    }
   }
 }
 
 .contacts-list__link {
+  color: $primary-text-color;
+
   display: flex;
   align-items: center;
-  padding-top: 32px;
-  padding-bottom: 32px;
 
   color: $primary-text-color;
+
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
   transition: color $transition-duration $transition-type-basic;
 
+  padding-top: 16px;
+  padding-bottom: 16px;
+
   &:hover,
   &:focus {
     color: $primary-accent-color;
   }
+
+  @media screen and (min-width: 768px) {
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+    display: flex;
+    align-items: center;
+
+    transition: color $transition-duration $transition-type-basic;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+}
+
+.contacts__link--tel {
+  @media screen and (max-width: 767px) {
+    font-size: 34px;
+    line-height: 1.18px;
+    letter-spacing: 0.02em;
+    color: $primary-accent-color;
+    margin-bottom: 32px;
+  }
+}
+
+.contacts__link--mail {
+  @media screen and (max-width: 767px) {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+  }
 }
 
 .contacts-list__icon {
-  margin-right: 10px;
+  display: none;
   fill: currentColor;
+
+  @media screen and (min-width: 768px) {
+    margin-right: 8px;
+    display: inline-flex;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 10px;
+  }
+}
+
+.menu-socials__list {
+  display: flex;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.menu-socials__item {
+  &:not(:last-child) {
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
+  }
+}
+
+.menu-socials__link {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+
+  padding-right: 10px;
+  padding-left: 10px;
+
+  color: $primary-accent-color;
 }
