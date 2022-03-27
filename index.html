@@ -133,21 +133,32 @@
         <h2 class="section__title">Чем мы занимаемся</h2>
         <ul class="services-list list">
           <li class="services-list__item">
-            <img src="./images/img1.jpeg" alt="Руки на клавиатуре. На экране код." width="370">
+            <picture>
+              <source srcset="../images/services1-1200-1x.jpg 1x, ./images/services1-1200-2x.jpg 2x" media="(min-width: 1200px)">
+              <img src="./images/services1-1200-1x.jpg" alt="Руки на клавиатуре. На экране код." class="team-list__photo">
+            </picture>
             <div class="services-list__banner">
               <p class="services-list__description">Десктопные приложения</p>
             </div>
           </li>
           
           <li class="services-list__item">
-            <img src="./images/img2.jpeg" alt="Человек работает за ноутбуком. В руках держит телефон. На экране ноутбука изображен макет контента на трех экранах телефонов" width="370">
+            <picture>
+              <source srcset="../images/services2-1200-1x.jpg 1x, ./images/services2-1200-2x.jpg 2x" media="(min-width: 1200px)">
+              <img src="./images/services2-1200-1x.jpg" alt="Человек работает за ноутбуком. В руках держит телефон. На экране ноутбука изображен макет контента на трех экранах телефонов" class="team-list__photo">
+            </picture>
             <div class="services-list__banner">
               <p class="services-list__description">Мобильные приложения</p>
             </div>
           </li>
           
           <li class="services-list__item">
-            <img src="./images/img3.jpeg" alt="Человек держит в руках планшет с палитрой цветов" width="370">
+            <picture>
+              <source srcset="../images/services3-1200-1x.jpg 1x, ./images/services3-1200-2x.jpg 2x" media="(min-width: 1200px)">
+              <img src="./images/services3-1200-1x.jpg"
+                alt="Человек держит в руках планшет с палитрой цветов"
+                class="team-list__photo">
+            </picture>
             <div class="services-list__banner">
               <p class="services-list__description">Дизайнерские решения</p>
             </div>
@@ -164,7 +175,16 @@
 
         <ul class="team-list list">
           <li class="team-list__item">
-            <img src="./images/demiyanenko1.jpeg" alt="Фото Игоря Демьяненка" width="270" class="team-list__photo">
+            <picture>
+              <source srcset="./images/demiyanenko-1200-1x.jpg 1x, ./images/demiyanenko-1200-2x.jpg 2x" media="(min-width: 1200px)">
+
+              <source srcset="./images/demiyanenko-768-1x.jpg 1x, ./images/demiyanenko-768-2x.jpg 2x" media="(min-width: 768px)">
+
+              <source srcset="./images/demiyanenko-480-1x.jpg 1x, ./images/demiyanenko-480-2x.jpg 2x" media="(max-width: 767px)">
+
+              <img src="./images/demiyanenko-480-1x.jpg" alt="Фото Игоря Демьяненка" class="team-list__photo">
+            </picture>
+  
             <div class="team-content">
               <h3 class="team-content__member">Игорь Демьяненко</h3>
               <p class="team-content__position" lang="en">Product Designer</p>
@@ -206,7 +226,16 @@
           </li>
           
           <li class="team-list__item">
-            <img src="./images/repina2.jpeg" alt="Фото Ольги Репиной" width="270" class="team-list__photo">
+            <picture>
+              <source srcset="./images/repina-480-1x.jpg 1x, ./images/repina-1200-2x.jpg 2x" media="(min-width: 1200px)">
+            
+              <source srcset="./images/repina-768-1x.jpg 1x, ./images/repina-768-2x.jpg 2x" media="(min-width: 768px)">
+            
+              <source srcset="./images/repina-480-1x.jpg 1x, ./images/repina-480-2x.jpg 2x" media="(max-width: 767px)">
+            
+              <img src="./images/repina-480-1x.jpg" alt="Фото Ольги Репиной" class="team-list__photo">
+            </picture>
+            
             <div class="team-content">
               <h3 class="team-content__member">Ольга Репина</h3>
               <p class="team-content__position" lang="en">Frontend Developer</p>
@@ -248,7 +277,16 @@
           </li>
           
           <li class="team-list__item">
-            <img src="./images/tarasov3.jpeg" alt="Фото Николая Тарасова" width="270" class="team-list__photo">
+            <picture>
+              <source srcset="./images/tarasov-480-1x.jpg 1x, ./images/tarasov-1200-2x.jpg 2x" media="(min-width: 1200px)">
+            
+              <source srcset="./images/tarasov-768-1x.jpg 1x, ./images/tarasov-768-2x.jpg 2x" media="(min-width: 768px)">
+            
+              <source srcset="./images/tarasov-480-1x.jpg 1x, ./images/tarasov-480-2x.jpg 2x" media="(max-width: 767px)">
+            
+              <img src="./images/tarasov-480-1x.jpg" alt="Фото Николая Тарасова" class="team-list__photo">
+            </picture>
+          
             <div class="team-content">
               <h3 class="team-content__member">Николай Тарасов</h3>
               <p class="team-content__position" lang="en">Marketing</p>
@@ -290,7 +328,16 @@
           </li>
           
           <li class="team-list__item">
-            <img src="./images/yermakov4.jpeg" alt="Фото Михаила Ермакова" width="270" class="team-list__photo">
+            <picture>
+              <source srcset="./images/yermakov-480-1x.jpg 1x, ./images/yermakov-1200-2x.jpg 2x" media="(min-width: 1200px)">
+            
+              <source srcset="./images/yermakov-768-1x.jpg 1x, ./images/yermakov-768-2x.jpg 2x" media="(min-width: 768px)">
+            
+              <source srcset="./images/yermakov-480-1x.jpg 1x, ./images/yermakov-480-2x.jpg 2x" media="(max-width: 767px)">
+            
+              <img src="./images/yermakov-480-1x.jpg" alt="Фото Михаила Ермакова" class="team-list__photo">
+            </picture>
+           
             <div class="team-content">
               <h3 class="team-content__member">Михаил Ермаков</h3>
               <p class="team-content__position" lang="en">UI Designer</p>

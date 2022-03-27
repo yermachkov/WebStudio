@@ -1,8 +1,6 @@
 .menu-btn {
-  position: absolute;
-
-  top: 10px;
-  right: 15px;
+  display: block;
+  margin-left: auto;
 
   padding: 0;
   border: none;
@@ -33,10 +31,11 @@
 }
 
 .menu-container {
-  background-color: #fff;
-  z-index: 1;
+  display: flex;
 
   @media screen and (max-width: 767px) {
+    flex-direction: column;
+
     position: absolute;
     top: 0;
     left: 0;
@@ -44,8 +43,13 @@
     height: 100vh;
     padding: 48px 40px;
     overflow-y: hidden;
-    transform: translateY(-102%);
-    transition: transform $transition-type-basic;
+
+    z-index: 1;
+
+    transform: translateY(-120%);
+    transition: transform $transition-duration $transition-type-basic;
+
+    background-color: #fff;
   }
 
   &.is-open {
@@ -53,7 +57,6 @@
   }
 
   @media screen and (min-width: 768px) {
-    display: flex;
     align-items: center;
     justify-content: space-between;
     flex-grow: 1;

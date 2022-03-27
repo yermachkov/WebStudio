@@ -17,16 +17,16 @@
 }
 
 .nav-list {
-  @media screen and (max-width: 767px) {
-    margin-bottom: 302px;
-  }
-
   @media screen and (min-width: 768px) {
     display: flex;
   }
 }
 
 .nav-list__item:not(:last-child) {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 32px;
+  }
+
   @media screen and (min-width: 768px) {
     margin-right: 50px;
   }
@@ -40,9 +40,6 @@
   font-size: 40px;
   line-height: 1.18;
   letter-spacing: 0.02em;
-
-  padding-top: 16px;
-  padding-bottom: 16px;
 
   color: $title-text-color;
 
@@ -87,6 +84,7 @@
     display: flex;
     flex-direction: column-reverse;
     margin-bottom: 64px;
+    flex-grow: 1;
   }
 
   @media screen and (min-width: 768px) {
