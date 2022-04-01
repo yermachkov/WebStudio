@@ -11,12 +11,13 @@
   justify-content: center;
 }
 
-.services-list__item + .services-list__item {
-  margin-left: 30px;
-}
+// .services-list__item + .services-list__item {
+//   margin-left: 30px;
+// }
 
 .services-list__item {
   position: relative;
+  width: calc((100% - 90px) / 3);
 }
 
 .services-list__banner {
