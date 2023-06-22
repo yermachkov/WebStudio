@@ -1,356 +1,638 @@
 <!DOCTYPE html>
-<html lang="ru">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Портфолио</title>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="./css/main.min.css">
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
 
-<body>
-  
-  <!------------ Header ------------------>
-  
-  <header class="header">
-    <div class="container">
-      <nav class="nav">
-        <a href="./index.html" class="logo header__logo link"><span class="logo__partial">Web</span>Studio</a>
-        <button type="button" class="menu-btn" data-menu-button aria-expanded="false" aria-controls="menu-container">
-          <svg width="40" height="40" aria-label="Переключатель мобильного меню" class="menu">
-            <use href="./images/icons.svg#open-menu" class="icon-menu"></use>
-            <use href="./images/icons.svg#close-menu" class="icon-close"></use>
-          </svg>
-        </button>
-        <div class="menu-container" id="menu-container" data-menu>
-          <ul class="nav-list list">
-            <li class="nav-list__item"><a href="./index.html"
-                class="nav-list__link link">Cтудия</a></li>
-            <li class="nav-list__item"><a href="./portfolio.html" class="nav-list__link nav-list__link--current link">Портфолио</a></li>
-            <li class="nav-list__item"><a href="" class="nav-list__link link">Контакты</a></li>
-          </ul>
-  
-          <ul class="contacts-list list">
-            <li class="contacts-list__item">
-              <a href="mailto:info@devstudio.com" class="contacts-list__link link contacts__link--mail">
-                <svg class="contacts-list__icon" width="16" height="12">
-                  <use href="./images/icons.svg#icon-envelope"></use>
-                </svg>
-                info@devstudio.com</a>
-            </li>
-  
-            <li class="contacts-list__item">
-              <a href="tel:+380961111111" class="contacts-list__link link contacts__link--tel">
-                <svg class="contacts-list__icon" width="10" height="16">
-                  <use href="./images/icons.svg#icon-phone"></use>
-                </svg>
-                +38 096 111 11 11</a>
-            </li>
-          </ul>
-  
-          <ul class="menu-socials__list list">
-            <li class="menu-socials__item"><a href="#" class="menu-socials__link link">Instagram</a></li>
-            <li class="menu-socials__item"><a href="#" class="menu-socials__link link"> Twitter</a></li>
-            <li class="menu-socials__item"><a href="#" class="menu-socials__link link">Facebook</a></li>
-            <li class="menu-socials__item"><a href="#" class="menu-socials__link link"> LinkedIn</a></li>
-          </ul>
-        </div>
-      </nav>
-    </div>
-  </header>
+  <body>
+    <!------------ Header ------------------>
 
-  <main>
-    <section class="section">
+    <header class="header">
       <div class="container">
-        <h1 class="visually-hidden" aria-hidden="true" tabindex="-1">Примеры работ</h1>
-        
-        <ul class="btn-list list">
-          <li class="btn-list__item"><button type="button" class="btn-filter">Все</button></li>
-          <li class="btn-list__item"><button type="button" class="btn-filter">Веб-сайты</button></li>
-          <li class="btn-list__item"><button type="button" class="btn-filter">Приложения</button></li>
-          <li class="btn-list__item"><button type="button" class="btn-filter">Дизайн</button></li>
-          <li class="btn-list__item"><button type="button" class="btn-filter">Маркетинг</button></li>
-        </ul>
-        
-        <ul class="project-list list">
-          <li class="project-list__item list">
-            <a href="" class="project-list__link link">
-              <div class="project__thumb">
-                <picture>
-                  <source srcset="./images/portfolio1-1200-1x.jpg 1x, ./images/portfolio1-1200-2x.jpg 2x" media="(min-width: 1200px)">
-                
-                  <source srcset="./images/portfolio1-768-1x.jpg 1x, ./images/portfolio1-768-2x.jpg 2x" media="(min-width: 768px)">
-                
-                  <source srcset="./images/portfolio1-480-1x.jpg 1x, ./images/portfolio1-480-2x.jpg 2x" media="(max-width: 767px)">
-                
-                  <img src="./images/portfolio1-480-1x.jpg" alt="Страница сайта Технокряк" class="project__img">
-                </picture>
-                  <p class="project__description">Технокряк это современная площадка распространения вируса. Компании используют
-                    эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
-              </div>
-              <div class="project-meta">
-                <h2 class="project-meta__title">Технокряк</h2>
-                <p class="project-meta__text">Веб-сайт</p>
-              </div>
-            </a>
-          </li>
-        
-          <li class="project-list__item">
-            <a href="" class="project-list__link link">
-              <div class="project__thumb">
-                <picture>
-                  <source srcset="./images/portfolio2-1200-1x.jpg 1x, ./images/portfolio2-1200-2x.jpg 2x" media="(min-width: 1200px)">
-                
-                  <source srcset="./images/portfolio2-768-1x.jpg 1x, ./images/portfolio2-768-2x.jpg 2x" media="(min-width: 768px)">
-                
-                  <source srcset="./images/portfolio2-480-1x.jpg 1x, ./images/portfolio2-480-2x.jpg 2x" media="(max-width: 767px)">
-                
-                  <img src="./images/portfolio2-480-1x.jpg" alt="На постере New Orlean vs Golden Star изображены два басктболиста разных команд в момент броска" class="project__img">
-                </picture>
-                <p class="project__description">Постер New Orlean vs Golden Star</p>
-              </div>
-              <div class="project-meta">
-                <h2 class="project-meta__title">Постер New Orlean vs Golden Star</h2>
-                <p class="project-meta__text">Дизайн</p>
-              </div>
-            </a>
-          </li>
-        
-          <li class="project-list__item">
-            <a href="" class="project-list__link link">
-              <div class="project__thumb">
-                <picture>
-                  <source srcset="./images/portfolio3-1200-1x.jpg 1x, ./images/portfolio3-1200-2x.jpg 2x" media="(min-width: 1200px)">
-                
-                  <source srcset="./images/portfolio3-768-1x.jpg 1x, ./images/portfolio3-768-2x.jpg 2x" media="(min-width: 768px)">
-                
-                  <source srcset="./images/portfolio3-480-1x.jpg 1x, ./images/portfolio3-480-2x.jpg 2x" media="(max-width: 767px)">
-                
-                  <img src="./images/portfolio3-480-1x.jpg"
-                    alt="логотип ресторана Seafood в виде плавника"
-                    class="project__img">
-                </picture>
-                <p class="project__description">Ресторан Seafood</p>
-              </div>
-              <div class="project-meta">
-                <h2 class="project-meta__title">Ресторан Seafood</h2>
-                <p class="project-meta__text">Приложение</p>
-              </div>
-            </a>
-          </li>
-        
-          <li class="project-list__item">
-            <a href="" class="project-list__link link">
-              <div class="project__thumb">
-                <picture>
-                  <source srcset="./images/portfolio4-1200-1x.jpg 1x, ./images/portfolio4-1200-2x.jpg 2x" media="(min-width: 1200px)">
-                
-                  <source srcset="./images/portfolio4-768-1x.jpg 1x, ./images/portfolio4-768-2x.jpg 2x" media="(min-width: 768px)">
-                
-                  <source srcset="./images/portfolio4-480-1x.jpg 1x, ./images/portfolio4-480-2x.jpg 2x" media="(max-width: 767px)">
-                
-                  <img src="./images/portfolio4-480-1x.jpg" alt="студийные наушники" class="project__img">
-                </picture>
-                <p class="project__description">Проект Prime</p>
-              </div>
-              <div class="project-meta">
-                <h2 class="project-meta__title">Проект Prime</h2>
-                <p class="project-meta__text">Маркетинг</p>
-              </div>
-            </a>
-          </li>
-        
-          <li class="project-list__item">
-            <a href="" class="project-list__link link">
-              <div class="project__thumb">
-                <picture>
-                  <source srcset="./images/portfolio5-1200-1x.jpg 1x, ./images/portfolio5-1200-2x.jpg 2x" media="(min-width: 1200px)">
-                
-                  <source srcset="./images/portfolio5-768-1x.jpg 1x, ./images/portfolio5-768-2x.jpg 2x" media="(min-width: 768px)">
-                
-                  <source srcset="./images/portfolio5-480-1x.jpg 1x, ./images/portfolio5-480-2x.jpg 2x" media="(max-width: 767px)">
-                
-                  <img src="./images/portfolio5-480-1x.jpg" alt="две коробки" class="project__img">
-                </picture>
-                <p class="project__description">Проект Boxes</p>
-              </div>
-              <div class="project-meta">
-                <h2 class="project-meta__title">Проект Boxes</h2>
-                <p class="project-meta__text">Приложение</p>
-              </div>
-            </a>
-          </li>
-        
-          <li class="project-list__item">
-            <a href="" class="project-list__link link">
-              <div class="project__thumb">
-                <picture>
-                  <source srcset="./images/portfolio6-1200-1x.jpg 1x, ./images/portfolio6-1200-2x.jpg 2x" media="(min-width: 1200px)">
-                
-                  <source srcset="./images/portfolio6-768-1x.jpg 1x, ./images/portfolio6-768-2x.jpg 2x" media="(min-width: 768px)">
-                
-                  <source srcset="./images/portfolio6-480-1x.jpg 1x, ./images/portfolio6-480-2x.jpg 2x" media="(max-width: 767px)">
-                
-                  <img src="./images/portfolio6-480-1x.jpg" alt="страница сайта на экране компьютера" class="project__img">
-                </picture>
-                <p class="project__description">Inspiration has no Borders</p>
-              </div>
-              <div class="project-meta">
-                <h2 class="project-meta__title">Inspiration has no Borders</h2>
-                <p class="project-meta__text">Веб-сайт</p>
-              </div>
-            </a>
-          </li>
-        
-          <li class="project-list__item">
-            <a href="" class="project-list__link link">
-              <div class="project__thumb">
-                <picture>
-                  <source srcset="./images/portfolio7-1200-1x.jpg 1x, ./images/portfolio7-1200-2x.jpg 2x" media="(min-width: 1200px)">
-                
-                  <source srcset="./images/portfolio7-768-1x.jpg 1x, ./images/portfolio7-768-2x.jpg 2x" media="(min-width: 768px)">
-                
-                  <source srcset="./images/portfolio7-480-1x.jpg 1x, ./images/portfolio7-480-2x.jpg 2x" media="(max-width: 767px)">
-                
-                  <img src="./images/portfolio7-480-1x.jpg" alt="открытый журнал" class="project__img">
-                </picture>
-                <p class="project__description">Издание Limited Edition</p>
-              </div>
-              <div class="project-meta">
-                <h2 class="project-meta__title">Издание Limited Edition</h2>
-                <p class="project-meta__text">Дизайн</p>
-              </div>
-            </a>
-          </li>
-        
-          <li class="project-list__item">
-            <a href="" class="project-list__link link">
-              <div class="project__thumb">
-                <picture>
-                  <source srcset="./images/portfolio8-1200-1x.jpg 1x, ./images/portfolio8-1200-2x.jpg 2x" media="(min-width: 1200px)">
-                
-                  <source srcset="./images/portfolio8-768-1x.jpg 1x, ./images/portfolio8-768-2x.jpg 2x" media="(min-width: 768px)">
-                
-                  <source srcset="./images/portfolio8-480-1x.jpg 1x, ./images/portfolio8-480-2x.jpg 2x" media="(max-width: 767px)">
-                
-                  <img src="./images/portfolio8-480-1x.jpg" alt="бирка для одежды" class="project__img">
-                </picture>
-                <p class="project__description">Проект LAB</p>
-              </div>
-              <div class="project-meta">
-                <h2 class="project-meta__title">Проект LAB</h2>
-                <p class="project-meta__text">Маркетинг</p>
-              </div>
-            </a>
-          </li>
-        
-          <li class="project-list__item">
-            <a href="" class="project-list__link link">
-              <div class="project__thumb">
-                <picture>
-                  <source srcset="./images/portfolio9-1200-1x.jpg 1x, ./images/portfolio9-1200-2x.jpg 2x" media="(min-width: 1200px)">
-                
-                  <source srcset="./images/portfolio9-768-1x.jpg 1x, ./images/portfolio9-768-2x.jpg 2x" media="(min-width: 768px)">
-                
-                  <source srcset="./images/portfolio9-480-1x.jpg 1x, ./images/portfolio9-480-2x.jpg 2x" media="(max-width: 767px)">
-                
-                  <img src="./images/portfolio9-480-1x.jpg" alt="еловек работает за ноутбуком" class=" project__img">
-                </picture>
-                <p class="project__description">Growing Business</p>
-              </div>
-              <div class="project-meta">
-                <h2 class="project-meta__title">Growing Business</h2>
-                <p class="project-meta__text">Приложение</p>
-              </div>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </section>
-  </main>
-
-  <!----------- Footer  ------------->
-  
-  <footer class="footer">
-    <div class="container footer-container">
-      <div class="footer-left">
-        <a href="./index.html" class="logo footer__logo link"><span class="logo__partial">Web</span>Studio</a>
-        <address class="address">
-          <ul class="address-list list">
-            <li class="address-list__item"><a href="https://goo.gl/maps/qHLMZfje5KFmPhSk8" target="_blank"
-                rel="noopener noreferrer nofollow" title="Открыть карту" class="address-list__link link">г. Киев, пр-т
-                Леси
-                Украинки, 26</a></li>
-            <li class="address-list__item"><a href="mailto:info@example.com"
-                class="address__mail link">info@example.com</a>
-            </li>
-            <li class="address-list__item"><a href="tel:+380991111111" class="address__tel link">+38 099 111 11 11</a>
-            </li>
-          </ul>
-        </address>
-      </div>
-  
-      <div class="footer-socials">
-        <p class="footer__title">Присоединяйтесь</p>
-  
-        <ul class="footer-socials__list list">
-          <li class="footer-socials__item">
-            <a href="" class="footer-socials__link">
-              <svg class="footer-socials__icon" width="20" height="20">
-                <use href="./images/icons.svg#icon-instagram"></use>
-              </svg>
-            </a>
-          </li>
-  
-          <li class="footer-socials__item">
-            <a href="" class="footer-socials__link">
-              <svg class="footer-socials__icon" width="20" height="20">
-                <use href="./images/icons.svg#icon-twitter"></use>
-              </svg>
-            </a>
-          </li>
-  
-          <li class="footer-socials__item">
-            <a href="" class="footer-socials__link">
-              <svg class="footer-socials__icon" width="20" height="20">
-                <use href="./images/icons.svg#icon-facebook"></use>
-              </svg>
-            </a>
-          </li>
-  
-          <li class="footer-socials__item">
-            <a href="" class="footer-socials__link">
-              <svg class="footer-socials__icon" width="20" height="20">
-                <use href="./images/icons.svg#icon-linkedin"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
-      </div>
-  
-      <div class="subscribe">
-        <p class="footer__title">Подпишитесь на рассылку</p>
-        <div class="subscribe-wrap">
-          <input type="text" name="subscribe" class="subcribe__input" placeholder="E-mail">
-          <button type="submit" class="btn subscribe__btn">Подписаться
-            <svg width="24" height="24" class="btn__icon">
-              <use href="./images/icons.svg#icon-send"></use>
+        <nav class="nav">
+          <a href="./index.html" class="logo header__logo link"
+            ><span class="logo__partial">Web</span>Studio</a
+          >
+          <button
+            type="button"
+            class="menu-btn"
+            data-menu-button
+            aria-expanded="false"
+            aria-controls="menu-container"
+          >
+            <svg
+              width="40"
+              height="40"
+              aria-label="Переключатель мобильного меню"
+              class="menu"
+            >
+              <use href="./images/icons.svg#open-menu" class="icon-menu"></use>
+              <use
+                href="./images/icons.svg#close-menu"
+                class="icon-close"
+              ></use>
             </svg>
           </button>
+          <div class="menu-container" id="menu-container" data-menu>
+            <ul class="nav-list list">
+              <li class="nav-list__item">
+                <a href="./index.html" class="nav-list__link link">Studio</a>
+              </li>
+              <li class="nav-list__item">
+                <a
+                  href="./portfolio.html"
+                  class="nav-list__link nav-list__link--current link"
+                  >Portfolio</a
+                >
+              </li>
+              <li class="nav-list__item">
+                <a href="" class="nav-list__link link">Contacts</a>
+              </li>
+            </ul>
+
+            <ul class="contacts-list list">
+              <li class="contacts-list__item">
+                <a
+                  href="mailto:info@devstudio.com"
+                  class="contacts-list__link link contacts__link--mail"
+                >
+                  <svg class="contacts-list__icon" width="16" height="12">
+                    <use href="./images/icons.svg#icon-envelope"></use>
+                  </svg>
+                  info@devstudio.com</a
+                >
+              </li>
+
+              <li class="contacts-list__item">
+                <a
+                  href="tel:+380961111111"
+                  class="contacts-list__link link contacts__link--tel"
+                >
+                  <svg class="contacts-list__icon" width="10" height="16">
+                    <use href="./images/icons.svg#icon-phone"></use>
+                  </svg>
+                  +38 096 111 11 11</a
+                >
+              </li>
+            </ul>
+
+            <ul class="menu-socials__list list">
+              <li class="menu-socials__item">
+                <a href="#" class="menu-socials__link link">Instagram</a>
+              </li>
+              <li class="menu-socials__item">
+                <a href="#" class="menu-socials__link link"> Twitter</a>
+              </li>
+              <li class="menu-socials__item">
+                <a href="#" class="menu-socials__link link">Facebook</a>
+              </li>
+              <li class="menu-socials__item">
+                <a href="#" class="menu-socials__link link"> LinkedIn</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="section">
+        <div class="container">
+          <h1 class="visually-hidden" aria-hidden="true" tabindex="-1">
+            Our projects
+          </h1>
+
+          <ul class="btn-list list">
+            <li class="btn-list__item">
+              <button type="button" class="btn-filter">All</button>
+            </li>
+            <li class="btn-list__item">
+              <button type="button" class="btn-filter">Web-apps</button>
+            </li>
+            <li class="btn-list__item">
+              <button type="button" class="btn-filter">Apps</button>
+            </li>
+            <li class="btn-list__item">
+              <button type="button" class="btn-filter">Design</button>
+            </li>
+            <li class="btn-list__item">
+              <button type="button" class="btn-filter">Marketing</button>
+            </li>
+          </ul>
+
+          <ul class="project-list list">
+            <li class="project-list__item list">
+              <a href="" class="project-list__link link">
+                <div class="project__thumb">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio1-1200-1x.jpg 1x,
+                        ./images/portfolio1-1200-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio1-768-1x.jpg 1x,
+                        ./images/portfolio1-768-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio1-480-1x.jpg 1x,
+                        ./images/portfolio1-480-2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+
+                    <img
+                      src="./images/portfolio1-480-1x.jpg"
+                      alt="Страница сайта Технокряк"
+                      class="project__img"
+                    />
+                  </picture>
+                  <p class="project__description">
+                    "Tech Crack" is an immersive and comprehensive app designed
+                    for tech enthusiasts. It offers up-to-date news, reviews,
+                    and insights on the latest technological advancements across
+                    various industries.
+                  </p>
+                </div>
+                <div class="project-meta">
+                  <h2 class="project-meta__title">Tech Crack</h2>
+                  <p class="project-meta__text">Web-site</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="project-list__item">
+              <a href="" class="project-list__link link">
+                <div class="project__thumb">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio2-1200-1x.jpg 1x,
+                        ./images/portfolio2-1200-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio2-768-1x.jpg 1x,
+                        ./images/portfolio2-768-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio2-480-1x.jpg 1x,
+                        ./images/portfolio2-480-2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+
+                    <img
+                      src="./images/portfolio2-480-1x.jpg"
+                      alt="poster New Orlean vs Golden Star"
+                      class="project__img"
+                    />
+                  </picture>
+                  <p class="project__description">
+                    Poster New Orlean vs Golden Star
+                  </p>
+                </div>
+                <div class="project-meta">
+                  <h2 class="project-meta__title">
+                    Poster New Orlean vs Golden Star
+                  </h2>
+                  <p class="project-meta__text">Design</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="project-list__item">
+              <a href="" class="project-list__link link">
+                <div class="project__thumb">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio3-1200-1x.jpg 1x,
+                        ./images/portfolio3-1200-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio3-768-1x.jpg 1x,
+                        ./images/portfolio3-768-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio3-480-1x.jpg 1x,
+                        ./images/portfolio3-480-2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+
+                    <img
+                      src="./images/portfolio3-480-1x.jpg"
+                      alt="логотип ресторана Seafood в виде плавника"
+                      class="project__img"
+                    />
+                  </picture>
+                  <p class="project__description">Restaurant Seafood</p>
+                </div>
+                <div class="project-meta">
+                  <h2 class="project-meta__title">Restaurant Seafood</h2>
+                  <p class="project-meta__text">App</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="project-list__item">
+              <a href="" class="project-list__link link">
+                <div class="project__thumb">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio4-1200-1x.jpg 1x,
+                        ./images/portfolio4-1200-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio4-768-1x.jpg 1x,
+                        ./images/portfolio4-768-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio4-480-1x.jpg 1x,
+                        ./images/portfolio4-480-2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+
+                    <img
+                      src="./images/portfolio4-480-1x.jpg"
+                      alt="студийные наушники"
+                      class="project__img"
+                    />
+                  </picture>
+                  <p class="project__description">Project Prime</p>
+                </div>
+                <div class="project-meta">
+                  <h2 class="project-meta__title">Project Prime</h2>
+                  <p class="project-meta__text">Marketing</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="project-list__item">
+              <a href="" class="project-list__link link">
+                <div class="project__thumb">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio5-1200-1x.jpg 1x,
+                        ./images/portfolio5-1200-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio5-768-1x.jpg 1x,
+                        ./images/portfolio5-768-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio5-480-1x.jpg 1x,
+                        ./images/portfolio5-480-2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+
+                    <img
+                      src="./images/portfolio5-480-1x.jpg"
+                      alt="две коробки"
+                      class="project__img"
+                    />
+                  </picture>
+                  <p class="project__description">Project Boxes</p>
+                </div>
+                <div class="project-meta">
+                  <h2 class="project-meta__title">Project Boxes</h2>
+                  <p class="project-meta__text">App</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="project-list__item">
+              <a href="" class="project-list__link link">
+                <div class="project__thumb">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio6-1200-1x.jpg 1x,
+                        ./images/portfolio6-1200-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio6-768-1x.jpg 1x,
+                        ./images/portfolio6-768-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio6-480-1x.jpg 1x,
+                        ./images/portfolio6-480-2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+
+                    <img
+                      src="./images/portfolio6-480-1x.jpg"
+                      alt="страница сайта на экране компьютера"
+                      class="project__img"
+                    />
+                  </picture>
+                  <p class="project__description">Inspiration has no Borders</p>
+                </div>
+                <div class="project-meta">
+                  <h2 class="project-meta__title">
+                    Inspiration has no Borders
+                  </h2>
+                  <p class="project-meta__text">Web-site</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="project-list__item">
+              <a href="" class="project-list__link link">
+                <div class="project__thumb">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio7-1200-1x.jpg 1x,
+                        ./images/portfolio7-1200-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio7-768-1x.jpg 1x,
+                        ./images/portfolio7-768-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio7-480-1x.jpg 1x,
+                        ./images/portfolio7-480-2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+
+                    <img
+                      src="./images/portfolio7-480-1x.jpg"
+                      alt="открытый журнал"
+                      class="project__img"
+                    />
+                  </picture>
+                  <p class="project__description">Limited Edition</p>
+                </div>
+                <div class="project-meta">
+                  <h2 class="project-meta__title">Limited Edition</h2>
+                  <p class="project-meta__text">Design</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="project-list__item">
+              <a href="" class="project-list__link link">
+                <div class="project__thumb">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio8-1200-1x.jpg 1x,
+                        ./images/portfolio8-1200-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio8-768-1x.jpg 1x,
+                        ./images/portfolio8-768-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio8-480-1x.jpg 1x,
+                        ./images/portfolio8-480-2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+
+                    <img
+                      src="./images/portfolio8-480-1x.jpg"
+                      alt="бирка для одежды"
+                      class="project__img"
+                    />
+                  </picture>
+                  <p class="project__description">Project LAB</p>
+                </div>
+                <div class="project-meta">
+                  <h2 class="project-meta__title">Project LAB</h2>
+                  <p class="project-meta__text">Marketing</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="project-list__item">
+              <a href="" class="project-list__link link">
+                <div class="project__thumb">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio9-1200-1x.jpg 1x,
+                        ./images/portfolio9-1200-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio9-768-1x.jpg 1x,
+                        ./images/portfolio9-768-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio9-480-1x.jpg 1x,
+                        ./images/portfolio9-480-2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+
+                    <img
+                      src="./images/portfolio9-480-1x.jpg"
+                      alt="еловек работает за ноутбуком"
+                      class="project__img"
+                    />
+                  </picture>
+                  <p class="project__description">Growing Business</p>
+                </div>
+                <div class="project-meta">
+                  <h2 class="project-meta__title">Growing Business</h2>
+                  <p class="project-meta__text">App</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <!----------- Footer  ------------->
+
+    <footer class="footer">
+      <div class="container footer-container">
+        <div class="footer-left">
+          <a href="./index.html" class="logo footer__logo link"
+            ><span class="logo__partial">Web</span>Studio</a
+          >
+          <address class="address">
+            <ul class="address-list list">
+              <li class="address-list__item">
+                <a
+                  href="https://goo.gl/maps/qHLMZfje5KFmPhSk8"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  title="Открыть карту"
+                  class="address-list__link link"
+                  >Kyiv, Lesi Ukrainky boulevard, 26/a
+                >
+              </li>
+              <li class="address-list__item">
+                <a href="mailto:info@example.com" class="address__mail link"
+                  >info@example.com</a
+                >
+              </li>
+              <li class="address-list__item">
+                <a href="tel:+380991111111" class="address__tel link"
+                  >+38 099 111 11 11</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
+
+        <div class="footer-socials">
+          <p class="footer__title">Join us</p>
+
+          <ul class="footer-socials__list list">
+            <li class="footer-socials__item">
+              <a href="" class="footer-socials__link">
+                <svg class="footer-socials__icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="footer-socials__item">
+              <a href="" class="footer-socials__link">
+                <svg class="footer-socials__icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="footer-socials__item">
+              <a href="" class="footer-socials__link">
+                <svg class="footer-socials__icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="footer-socials__item">
+              <a href="" class="footer-socials__link">
+                <svg class="footer-socials__icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="subscribe">
+          <p class="footer__title">Subscribe</p>
+          <div class="subscribe-wrap">
+            <input
+              type="text"
+              name="subscribe"
+              class="subcribe__input"
+              placeholder="E-mail"
+            />
+            <button type="submit" class="btn subscribe__btn">
+              Send
+              <svg width="24" height="24" class="btn__icon">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
+          </div>
         </div>
       </div>
-  
-    </div>
-  </footer>
+    </footer>
 
-<script src="./js/mobile-menu.js"></script>
-
-</body>
-
+    <script src="./js/mobile-menu.js"></script>
+  </body>
 </html>
